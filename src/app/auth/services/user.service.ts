@@ -15,7 +15,7 @@ import {
   providedIn: 'root',
 })
 export class UserService {
-  constructor(private http: HttpClient) {}
+  constructor(private readonly http: HttpClient) {}
 
   currentUser = signal<User>({ name: '', username: '', isOwner: false });
 
